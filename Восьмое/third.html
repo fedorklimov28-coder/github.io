@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая верстка</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        header { background: #667eea; color: white; padding: 1.5rem; text-align: center; }
+        nav { background: #2c3e50; padding: 1rem; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a { color: white; text-decoration: none; }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+        article { flex: 3; min-width: 280px; }
+        aside { 
+            flex: 1; 
+            min-width: 220px; 
+            background: #f8f9fa; 
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        section {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 3px solid #667eea;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .content { flex-direction: column; }
+            nav ul { flex-direction: column; align-items: center; gap: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Семантическая верстка</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#section">section</a></li>
+                <li><a href="#article">article</a></li>
+                <li><a href="#aside">aside</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <article id="article">
+                <h2></h2>
+                
+                <section id="section">
+                    <h3>&lt;section&gt; — Раздел</h3>
+                </section>
+                
+                <section>
+                    <h3>&lt;article&gt; — Статья</h3>
+                </section>
+            </article>
+            
+            <aside id="aside">
+                <h3>&lt;aside&gt; — Боковая панель</h3>
+                <p>Дополнительная информация</p>
+                <ul style="margin-left: 1.2rem;">
+            </aside>
+        </div>
+        
+        <footer>
+            <h3>&lt;footer&gt; — Подвал</h3>
+        </footer>
+    </div>
+</body>
+</html>
