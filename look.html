@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
-
+    <title>Распознавание</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -41,77 +40,68 @@
     </nav>
 
     <section class="main-container">
-        <aside>
-            <div id="history">
-                <h3 style="font-size: 24px;">История запросов</h3>
 
-                <a href="history.html#1"><div class="request"><p class="description">Запрос 1: рыжий кот</p></div></a>
-                <a href="history.html#2"><div class="request"><p class="description">Запрос 2: тёмная крыса</p></div></a>
-                <a href="history.html#3"><div class="request"><p class="description">Запрос 3: заяц</p></div></a>
-                <a href="history.html#4"><div class="request"><p class="description">Запрос 4: яблоки</p></div></a>
+        <div class="slider">
 
-                <a id="all_request" href="history.html">Ещё</a>
-            </div>
-        </aside>
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
 
-        <div id="chat-window">
-            <div id="chat">
-                <div class="message user">
-                    <div class="bubble">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10" alt="Изображение">
+            <div class="slides">
+                <div class="slide">
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://minisklad.storage.yandexcloud.net/store/infopage/91/headline_image/c15aee8c092307ae4f55fd0350df2e5c.jpg" alt="Изображение" class="example">
+                            <p>Где пассатижы?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="message bot">
-                    <div class="bubble">
-                        <p>
-                            На изображении запечетлён кот или кошка<br>
-                            рыжего окраса. Животное сидит на асфальте
-                        </p>
-                    </div>
-                    
-                    <div class="reception">
-                        <input type="radio" name="fb1" id="like1" class="feedback-input">
-                        <label for="like1" class="feedback">👍</label>
-
-                        <input type="radio" name="fb1" id="dislike1" class="feedback-input">
-                        <label for="dislike1" class="feedback">👎</label>
-                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                Пассатижы находятся справа по середине
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="message user">
-                    <div class="bubble">
-                        <img src="https://optim.tildacdn.com/tild3835-3736-4134-b665-666230643938/-/resize/744x/-/format/webp/wepik-export-2023081.png.webp
-                        " alt="Изображение">
+                <div class="slide">
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://s5.stc.all.kpcdn.net/family/wp-content/uploads/2022/01/frukty-polza-i-vred-960x540.jpg" alt="Изображение" class="example">
+                            <p>Сколько яблок на картинке?</p>
+                        </div>
+                    </div>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На картинке 2 яблока
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="message bot">
-                    <div class="bubble">
-                        <p>
-                            На изображении запечетлена крыса<br>
-                            тёмного окраса. Животное стоит на асфальте
-                        </p>
+
+                <div class="slide">
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://fenixfoto.ru/upload/iblock/0fd/ne8m11in78w1wrfvs71tfu0zjgx17did.jpg" alt="Изображение" class="example">
+                        </div>
                     </div>
-
-                    <div class="reception">
-                        <input type="radio" name="fb2" id="like2" class="feedback-input">
-                        <label for="like2" class="feedback">👍</label>
-
-                        <input type="radio" name="fb2" id="dislike2" class="feedback-input">
-                        <label for="dislike2" class="feedback">👎</label>
-                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На изображении присутствует надпись "10 ул. Романовская"
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <form action="" method="get" class="input-form">
-                <label class="file-label">
-                    <input type="file" style="display:none;">📎
-                </label>
-                <input type="text" placeholder="Введите сообщение..." class="text-input">
-                <button type="submit" class="send-button">Отправить</button>
-            </form>
-        </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+            </div>
+        </div>    
     </section>
 
     <footer>

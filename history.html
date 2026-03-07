@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История запросов</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <div>
+                <li><a href="index.html"><b>Polyvision</b></a></li>
+            </div>
+            
+            <div>
+                <li>
+                    <a href="#">Проект</a>
+                    <ul class="submenu">
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="tarif.html">Тарифы</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Возможности</a>
+                    <ul class="submenu">
+                        <li><a href="look.html">Распознавание</a></li>
+                        <li><a href="history.html">История запросов</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Профиль</a>
+                    <ul class="submenu">
+                        <li><a href="user.html">Личный кабинет</a></li>
+                        <li><a href="login.html">Выйти</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="main-container">
+        <div id="overlay">
+            <p id="loading">↺</p>
+        </div>
+        
+        <div id="chat-window" style="width: 100%; margin-left: 0;">
+
+            <div id="chat">
+                <div class="search">
+                    <search>
+                        <form action="" method="get" id="search-form">
+                            <input type="search" placeholder="Найти" class="text-input">
+                            <label class="search-label">
+                                <button type="submit" style="display: none;">Найти</button>🔎
+                            </label>
+                        </form>
+                    </search>
+                </div>
+                
+                <div class="user_request" id="1">
+                    <h2 class="title_request">Запрос 1</h2>
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10" alt="Изображение">
+                        </div>
+                    </div>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На изображении запечетлён кот или кошка<br>
+                                рыжего окраса. Животное сидит на асфальте
+                            </p>
+                        </div>
+                        
+                        <div class="reception">
+                            <input type="radio" name="fb1" id="like1" class="feedback-input">
+                            <label for="like1" class="feedback">👍</label>
+
+                            <input type="radio" name="fb1" id="dislike1" class="feedback-input">
+                            <label for="dislike1" class="feedback">👎</label>
+                            <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user_request" id="2">
+                    <h2 class="title_request">Запрос 2</h2>
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://optim.tildacdn.com/tild3835-3736-4134-b665-666230643938/-/resize/744x/-/format/webp/wepik-export-2023081.png.webp
+                            " alt="Изображение">
+                        </div>
+                    </div>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На изображении запечетлена крыса<br>
+                                тёмного окраса. Животное стоит на асфальте
+                            </p>
+                        </div>
+
+                        <div class="reception">
+                            <input type="radio" name="fb2" id="like2" class="feedback-input">
+                            <label for="like2" class="feedback">👍</label>
+
+                            <input type="radio" name="fb2" id="dislike2" class="feedback-input">
+                            <label for="dislike2" class="feedback">👎</label>
+                            <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user_request" id="3">
+                    <h2 class="title_request">Запрос 3</h2>
+                    <div class="message user">
+                        <div class="bubble">
+                            <video controls="controls">
+                                <source src="media/Тасман.mp4" type="video/mp4">
+                                Ваш бразуер не поддерживает видео
+                            </video>
+                        </div>
+                    </div>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На видео изображены заяц, человек и розовое животное, происходит разговор.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reception">
+                        <input type="radio" name="fb3" id="like3" class="feedback-input">
+                        <label for="like3" class="feedback">👍</label>
+
+                        <input type="radio" name="fb3" id="dislike3" class="feedback-input">
+                        <label for="dislike3" class="feedback">👎</label>
+                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                    </div>
+                </div>
+
+                <div class="user_request" id="4">
+                    <h2 class="title_request">Запрос 4</h2>
+                    <div class="message user">
+                        <div class="bubble">
+                            <img src="https://s5.stc.all.kpcdn.net/family/wp-content/uploads/2022/01/frukty-polza-i-vred-960x540.jpg" alt="Изображение" class="example">
+                            <p>Сколько яблок на картинке?</p>
+                        </div>
+                    </div>
+                    <div class="message bot">
+                        <div class="bubble">
+                            <p>
+                                На картинке 2 яблока
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reception">
+                        <input type="radio" name="fb4" id="like4" class="feedback-input">
+                        <label for="like4" class="feedback">👍</label>
+
+                        <input type="radio" name="fb4" id="dislike4" class="feedback-input">
+                        <label for="dislike4" class="feedback">👎</label>
+                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div id="info">
+            Контакты:<br><br>
+            <a href="mailto:polyvisioneyen@gmail.com">polyvision@gmail.com</a><br>
+            <a href="https://t.me/polyvisioneye">Telegram</a><br>
+            <a href="https://vk.com/polyvisioneye">VK</a><br><br>
+
+            © 2026 Polyvision
+        </div>
+
+        <div id="nav">
+            Навигация:<br>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>
+                    <a href="about.html">О проекте</a>
+                    <ul>
+                        <li>
+                            Возможности
+                            <ul>
+                                <li><a href="look.html">Распознавание</a></li>
+                                <li><a href="history.html">История запросов</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Профиль
+                            <ul>
+                                <li><a href="user.html">Личный кабинет</a></li>
+                                <li><a href="logout.html">Выйти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="map">
+            <li class="sitemap">Карта сайта:<br></li>
+            <ul>
+                <li class="sitemap">
+                    <ul class="sitemap-block">
+                        <b>Основное</b>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="tarif.html">Тарифы</a></li>
+                    </ul>
+
+                    <ul class="sitemap-block">
+                        <b>Возможности</b>
+                        <ul>
+                            <li><a href="look.html">Распознавание</a></li>
+                            <li><a href="history.html">История запросов</a></li>
+                        </ul>
+                    </ul>
+
+                    <ul  class="sitemap-block">
+                        <b>Профиль</b>
+                        <ul>
+                            <li><a href="user.html">Личный кабинет</a></li>
+                            <li><a href="login.html">Выйти</a></li>
+                        </ul>
+                    </ul>
+
+                    <ul class="sitemap-block">
+                        <b>Соглашения</b>
+                        <li><a href="agree.html">Пользовательское соглашение</a></li>
+                        <li><a href="policy.html">Политика конфиденциальности</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Тарифы</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -41,75 +41,68 @@
     </nav>
 
     <section class="main-container">
-        <aside>
-            <div id="history">
-                <h3 style="font-size: 24px;">История запросов</h3>
+        <div id="table">
+            <table id="tarif">
+                <tr>
+                    <th></th>
+                    <th>Тариф</th>
+                    <th>Цена</th>
+                    <th>Функции</th>
+                </tr>
 
-                <a href="history.html#1"><div class="request"><p class="description">Запрос 1: рыжий кот</p></div></a>
-                <a href="history.html#2"><div class="request"><p class="description">Запрос 2: тёмная крыса</p></div></a>
-                <a href="history.html#3"><div class="request"><p class="description">Запрос 3: заяц</p></div></a>
-                <a href="history.html#4"><div class="request"><p class="description">Запрос 4: яблоки</p></div></a>
+                <tr>
+                    <td class="choice">
+                        <input type="radio" name="trf" id="trf1" checked>
+                        <label for="trf1"></label>
+                    </td>
+                    <td>Стандартный</td>
+                    <td>Бесплатно</td>
+                    <td>
+                        <ul>
+                            <li>25 запросов в день</li>
+                            <li>Хранение истории 3 недели</li>
+                            <li>Объём загружаемого контента до 10 Мб</li>
+                        </ul>
+                    </td>
+                </tr>
 
-                <a id="all_request" href="history.html">Ещё</a>
-            </div>
-        </aside>
+                <tr>
+                    <td class="choice">
+                        <input type="radio" name="trf" id="trf2">
+                        <label for="trf2"></label>
+                    </td>
+                    <td>Расширенный</td>
+                    <td>200 руб/мес</td>
+                    <td>
+                        <ul>
+                            <li>50 запросов в день</li>
+                            <li>Хранение истории месяц</li>
+                            <li>Объём загружаемого контента до 100 Мб</li>
+                        </ul>
+                    </td>
+                </tr>
 
-        <div id="chat-window">
-            <div id="chat">
-                <div class="message user">
-                    <div class="bubble">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10" alt="Изображение">
-                    </div>
-                </div>
-                <div class="message bot">
-                    <div class="bubble">
-                        <p>
-                            На изображении запечетлён кот или кошка<br>
-                            рыжего окраса. Животное сидит на асфальте
-                        </p>
-                    </div>
-                    
-                    <div class="reception">
-                        <input type="radio" name="fb1" id="like1" class="feedback-input">
-                        <label for="like1" class="feedback">👍</label>
+                <tr>
+                    <td class="choice">
+                        <input type="radio" name="trf" id="trf3">
+                        <label for="trf3"></label>
+                    </td>
+                    <td>Продвинутый</td>
+                    <td>500 руб/мес</td>
+                    <td>
+                        <ul>
+                            <li>100 запросов в день</li>
+                            <li>Хранение истории месяц</li>
+                            <li>Объём загружаемого контента до 250 Мб</li>
+                            <li>1 видео в день объёмом до 1 Гб</li>
+                            <li>Обработка запросов в первую очередь</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
 
-                        <input type="radio" name="fb1" id="dislike1" class="feedback-input">
-                        <label for="dislike1" class="feedback">👎</label>
-                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
-                    </div>
-                </div>
-
-                <div class="message user">
-                    <div class="bubble">
-                        <img src="https://optim.tildacdn.com/tild3835-3736-4134-b665-666230643938/-/resize/744x/-/format/webp/wepik-export-2023081.png.webp
-                        " alt="Изображение">
-                    </div>
-                </div>
-                <div class="message bot">
-                    <div class="bubble">
-                        <p>
-                            На изображении запечетлена крыса<br>
-                            тёмного окраса. Животное стоит на асфальте
-                        </p>
-                    </div>
-
-                    <div class="reception">
-                        <input type="radio" name="fb2" id="like2" class="feedback-input">
-                        <label for="like2" class="feedback">👍</label>
-
-                        <input type="radio" name="fb2" id="dislike2" class="feedback-input">
-                        <label for="dislike2" class="feedback">👎</label>
-                        <p class="assess">- оцените результат работы, нам это очень важно!</p>
-                    </div>
-                </div>
-            </div>
-
-            <form action="" method="get" class="input-form">
-                <label class="file-label">
-                    <input type="file" style="display:none;">📎
-                </label>
-                <input type="text" placeholder="Введите сообщение..." class="text-input">
-                <button type="submit" class="send-button">Отправить</button>
+            <form action="" method="get">
+                <button>Оформить</button>
             </form>
         </div>
     </section>
